@@ -6,5 +6,5 @@ theme = 'PaperMod'
 [params]
 description = 'Blog and General Ramblings'
 author = 'Andrew Glass'
-keywords = 'Linux, Blog, Ramblings'
+keywords = 'Linux Blog Ramblings'
 github = 'https://github.com/andrewglass3'
