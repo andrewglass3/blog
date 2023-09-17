@@ -1,4 +1,10 @@
-baseURL = 'https://linuxdojo.co.uk'
+baseURL = 'https://www.linuxdojo.co.uk'
 languageCode = 'en-us'
 title = 'Blog and General Ramblings'
 theme = 'PaperMod'
+
+[params]
+description = 'Blog and General Ramblings'
+author = 'Andrew Glass'
+keywords = 'Linux, Blog, Ramblings'
+github = 'https://github.com/andrewglass3'
