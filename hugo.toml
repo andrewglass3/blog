@@ -1,0 +1,4 @@
+baseURL = 'https://linuxdojo.co.uk'
+languageCode = 'en-us'
+title = 'Blog and General Ramblings'
+theme = 'PaperMod'
