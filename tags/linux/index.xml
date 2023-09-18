@@ -17,7 +17,7 @@
       <pubDate>Sun, 17 Sep 2023 21:21:30 +0100</pubDate>
       
       <guid>https://linuxdojo.co.uk/doc/find/</guid>
-      <description>Find and remove - A quick note and Warning find . -name &amp;#39;.git&amp;#39; -type d -prune -exec rm -rf &amp;#39;{}&amp;#39; \; Here&amp;rsquo;s what it does:
+      <description>Linux Find and Remove find . -name &amp;#39;.git&amp;#39; -type d -prune -exec rm -rf &amp;#39;{}&amp;#39; \; Here&amp;rsquo;s what it does:
 find . searches the current directory and its subdirectories. name &#39;.git&#39; matches files and directories named .git. type d makes the command only consider directories (since .git is a directory). prune prevents find from descending into the current file if it is a directory, which helps when you&amp;rsquo;re wanting to remove the directory itself.</description>
     </item>
     
