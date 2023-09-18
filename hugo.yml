@@ -71,6 +71,8 @@ params:
       url: "https://stackoverflow.com"
     - name: github
       url: "https://github.com/"
+    - name: applemusic
+      url: "https://music.apple.com/profile/andrewglass3"
 
   analytics:
     google:
