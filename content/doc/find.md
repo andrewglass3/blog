@@ -1,12 +1,12 @@
 +++
-title = 'Find'
+title = 'Linux Find Command'
 date = 2023-09-17T21:21:30+01:00
 draft = false
 +++
 
 # Find and remove - A quick note and Warning
 
-```jsx
+```
 find . -name '.git' -type d -prune -exec rm -rf '{}' \;
 ```
 

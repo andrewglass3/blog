@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Blog and General Ramblings</title>
+    <link>https://www.linuxdojo.co.uk/</link>
+    <description>Recent content on Blog and General Ramblings</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 17 Sep 2023 21:21:30 +0100</lastBuildDate><atom:link href="https://www.linuxdojo.co.uk/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Linux Find Command</title>
+      <link>https://www.linuxdojo.co.uk/doc/find/</link>
+      <pubDate>Sun, 17 Sep 2023 21:21:30 +0100</pubDate>
+      
+      <guid>https://www.linuxdojo.co.uk/doc/find/</guid>
+      <description>Find and remove - A quick note and Warning find . -name &amp;#39;.git&amp;#39; -type d -prune -exec rm -rf &amp;#39;{}&amp;#39; \; Here&amp;rsquo;s what it does:
+find . searches the current directory and its subdirectories. name &#39;.git&#39; matches files and directories named .git. type d makes the command only consider directories (since .git is a directory). prune prevents find from descending into the current file if it is a directory, which helps when you&amp;rsquo;re wanting to remove the directory itself.</description>
+    </item>
+    
+    <item>
+      <title>Test</title>
+      <link>https://www.linuxdojo.co.uk/docs/test/</link>
+      <pubDate>Sun, 17 Sep 2023 19:16:58 +0100</pubDate>
+      
+      <guid>https://www.linuxdojo.co.uk/docs/test/</guid>
+      <description>This is a page of testing randomness</description>
+    </item>
+    
+  </channel>
+</rss>
