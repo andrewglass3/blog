@@ -1,18 +1,23 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Docs on Linuxdojo - Technical Blog and General Ramblings</title>
-    <link>https://www.linuxdojo.co.uk/docs/</link>
-    <description>Recent content in Docs on Linuxdojo - Technical Blog and General Ramblings</description>
+    <title>Docs on Linuxdojo</title>
+    <link>https://linuxdojo.co.uk/docs/</link>
+    <description>Recent content in Docs on Linuxdojo</description>
+    <image>
+      <title>Linuxdojo</title>
+      <url>https://linuxdojo.co.uk/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://linuxdojo.co.uk/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Sun, 17 Sep 2023 19:16:58 +0100</lastBuildDate><atom:link href="https://www.linuxdojo.co.uk/docs/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language>
+    <lastBuildDate>Sun, 17 Sep 2023 19:16:58 +0100</lastBuildDate><atom:link href="https://linuxdojo.co.uk/docs/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Test</title>
-      <link>https://www.linuxdojo.co.uk/docs/test/</link>
+      <link>https://linuxdojo.co.uk/docs/test/</link>
       <pubDate>Sun, 17 Sep 2023 19:16:58 +0100</pubDate>
       
-      <guid>https://www.linuxdojo.co.uk/docs/test/</guid>
+      <guid>https://linuxdojo.co.uk/docs/test/</guid>
       <description>This is a page of testing randomness</description>
     </item>
     
