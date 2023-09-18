@@ -30,7 +30,7 @@ editPost:
     appendFilePath: true # to append file path to Edit link
 ---
 
-# Find and remove - A quick note and Warning
+# Linux Find and Remove
 
 ```
 find . -name '.git' -type d -prune -exec rm -rf '{}' \;
