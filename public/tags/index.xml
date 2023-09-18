@@ -10,6 +10,16 @@
       <link>https://linuxdojo.co.uk/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language><atom:link href="https://linuxdojo.co.uk/tags/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language>
+    <lastBuildDate>Sun, 17 Sep 2023 21:21:30 +0100</lastBuildDate><atom:link href="https://linuxdojo.co.uk/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Linux</title>
+      <link>https://linuxdojo.co.uk/tags/linux/</link>
+      <pubDate>Sun, 17 Sep 2023 21:21:30 +0100</pubDate>
+      
+      <guid>https://linuxdojo.co.uk/tags/linux/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>
