@@ -5,10 +5,16 @@
     <loc>https://linuxdojo.co.uk/doc/</loc>
     <lastmod>2023-09-17T21:21:30+01:00</lastmod>
   </url><url>
+    <loc>https://linuxdojo.co.uk/tags/linux/</loc>
+    <lastmod>2023-09-17T21:21:30+01:00</lastmod>
+  </url><url>
     <loc>https://linuxdojo.co.uk/doc/find/</loc>
     <lastmod>2023-09-17T21:21:30+01:00</lastmod>
   </url><url>
     <loc>https://linuxdojo.co.uk/</loc>
+    <lastmod>2023-09-17T21:21:30+01:00</lastmod>
+  </url><url>
+    <loc>https://linuxdojo.co.uk/tags/</loc>
     <lastmod>2023-09-17T21:21:30+01:00</lastmod>
   </url><url>
     <loc>https://linuxdojo.co.uk/docs/</loc>
@@ -18,7 +24,5 @@
     <lastmod>2023-09-17T19:16:58+01:00</lastmod>
   </url><url>
     <loc>https://linuxdojo.co.uk/categories/</loc>
-  </url><url>
-    <loc>https://linuxdojo.co.uk/tags/</loc>
   </url>
 </urlset>
