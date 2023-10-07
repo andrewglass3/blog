@@ -25,14 +25,17 @@ jobs:
         uses: peaceiris/actions-hugo@v2
         with:
           hugo-version: "latest"
+          extended: true
 
       # Build Hugo Site
       - name: Build Hugo Site
-        run: hugo --minify --gc
+        run: hugo --minify
 
       # Deploy
       - name: Publish
         uses: cloudflare/wrangler-action@1.3.0
         with:
           apiToken: ${{ secrets.CF_API_TOKEN }}
+          accountId: ${{ secrets.CF_ACCOUNT_ID }}
+          command: pages deploy --project-name=blog
           # workingDirectory: ./public
