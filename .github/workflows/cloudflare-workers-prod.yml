@@ -26,14 +26,14 @@ jobs:
 
       # Deploy to Cloudflare Pages
       - name: Deploy to Cloudflare Pages
-        uses: cloudflare/pages-action@v2
+        uses: cloudflare/pages-action@v1
         with:
           apiToken: ${{ secrets.CF_API_TOKEN }}
           accountId: ${{ secrets.CF_ACCOUNT_ID }}
-          project-name: "blog" # Replace with your Cloudflare project name
+          projectName: "blog" # Replace with your Cloudflare project name
           build-command: "npm run build" # Not needed if you build in previous steps
-          production-branch: main # Replace with your default branch if not 'main'
-          production-directory: public # Replace if your build directory is different
+          branch: main # Replace with your default branch if not 'main'
+          directory: public # Replace if your build directory is different
 
 
           # name: Deploy Hugo Site to Cloudflare Pages
