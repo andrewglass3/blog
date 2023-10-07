@@ -1,3 +1,3 @@
 User-agent: *
 Disallow:
-Sitemap: https://linuxdojo.co.uk/sitemap.xml
+Sitemap: https://blog2.linuxdojo.co.uk/sitemap.xml
