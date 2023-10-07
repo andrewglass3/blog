@@ -1,4 +1,4 @@
-name: Cloudflare Workers
+name: Deploy Hugo Site to Cloudflare Pages
 
 # Controls when the action will run. Triggers the workflow on push or pull request
 # events but only for the master branch
@@ -19,8 +19,6 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
-        with:
-          submodules: "true"
 
       # Setup Hugo
       - name: Setup Latest Version of Hugo
@@ -33,7 +31,9 @@ jobs:
         run: hugo --minify --gc
 
       # Deploy
-      - name: Deploy via CloudFlare Workers
-        uses: cloudflare/wrangler-action@v3
+      - name: Publish
+        uses: cloudflare/wrangler-action@1.3.0
         with:
           apiToken: ${{ secrets.CF_API_TOKEN }}
+          workspace: "blog"
+          workingDirectory: ./public
