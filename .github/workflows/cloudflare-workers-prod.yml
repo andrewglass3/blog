@@ -1,41 +1,78 @@
-name: Deploy Hugo Site to Cloudflare Pages
+name: Deploy Hugo to Cloudflare Pages
 
-# Controls when the action will run. Triggers the workflow on push or pull request
-# events but only for the master branch
 on:
   push:
-    branches: [main]
-  pull_request:
-    branches: [main]
+    branches:
+      - main # Replace with your default branch if not 'main'
 
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  # This workflow contains a single job called "deploy"
-  deploy:
-    # The type of runner that the job will run on
+  build:
     runs-on: ubuntu-latest
 
-    # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v2
+      # Checkout the repository
+      - name: Checkout
+        uses: actions/checkout@v2
 
       # Setup Hugo
-      - name: Setup Latest Version of Hugo
+      - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
-          hugo-version: "latest"
-          extended: true
+          hugo-version: "0.87.0" # Replace with your desired Hugo version
 
-      # Build Hugo Site
-      - name: Build Hugo Site
+      # Build the Hugo site
+      - name: Build
         run: hugo --minify
 
-      # Deploy
-      - name: Publish
-        uses: cloudflare/wrangler-action@v3
+      # Deploy to Cloudflare Pages
+      - name: Deploy to Cloudflare Pages
+        uses: cloudflare/pages-action@v2
         with:
           apiToken: ${{ secrets.CF_API_TOKEN }}
           accountId: ${{ secrets.CF_ACCOUNT_ID }}
-          command: pages deploy --project-name=blog
-          # workingDirectory: ./public
+          project-name: "blog" # Replace with your Cloudflare project name
+          build-command: "npm run build" # Not needed if you build in previous steps
+          production-branch: main # Replace with your default branch if not 'main'
+          production-directory: public # Replace if your build directory is different
+
+
+          # name: Deploy Hugo Site to Cloudflare Pages
+# # Controls when the action will run. Triggers the workflow on push or pull request
+# # events but only for the master branch
+# on:
+#   push:
+#     branches: [main]
+#   pull_request:
+#     branches: [main]
+
+# # A workflow run is made up of one or more jobs that can run sequentially or in parallel
+# jobs:
+#   # This workflow contains a single job called "deploy"
+#   deploy:
+#     # The type of runner that the job will run on
+#     runs-on: ubuntu-latest
+
+#     # Steps represent a sequence of tasks that will be executed as part of the job
+#     steps:
+#       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+#       - uses: actions/checkout@v2
+
+#       # Setup Hugo
+#       - name: Setup Latest Version of Hugo
+#         uses: peaceiris/actions-hugo@v2
+#         with:
+#           hugo-version: "latest"
+#           extended: true
+
+#       # Build Hugo Site
+#       - name: Build Hugo Site
+#         run: hugo --minify
+
+#       # Deploy
+#       - name: Publish
+#         uses: cloudflare/wrangler-action@v3
+#         with:
+#           apiToken: ${{ secrets.CF_API_TOKEN }}
+#           accountId: ${{ secrets.CF_ACCOUNT_ID }}
+#           command: pages deploy --project-name=blog
+#           # workingDirectory: ./public
