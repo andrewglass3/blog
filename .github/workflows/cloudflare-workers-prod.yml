@@ -12,7 +12,7 @@ jobs:
     steps:
       # Checkout the repository
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
       # Setup Hugo
       - name: Setup Hugo
@@ -30,11 +30,10 @@ jobs:
         with:
           apiToken: ${{ secrets.CF_API_TOKEN }}
           accountId: ${{ secrets.CF_ACCOUNT_ID }}
-          projectName: "blog" # Replace with your Cloudflare project name
-          build-command: "npm run build" # Not needed if you build in previous steps
+          projectName: blog # Replace with your Cloudflare project name # Not needed if you build in previous steps
           branch: main # Replace with your default branch if not 'main'
           directory: public # Replace if your build directory is different
-
+          wranglerVersion: "3"
 
           # name: Deploy Hugo Site to Cloudflare Pages
 # # Controls when the action will run. Triggers the workflow on push or pull request
